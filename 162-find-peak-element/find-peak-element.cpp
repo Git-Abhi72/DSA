@@ -5,11 +5,11 @@ public:
          if (n == 1) {
             return 0;  // The only element is the peak
         }
-        // Check if the first element is a peak
+        // Check if the first element is a peak out of 2 ele
         if (nums[0] > nums[1]) {
             return 0;
         }
-        // Check if the last element is a peak
+        // Check if the last element is a peak out of 2 ele
         if (nums[n - 1] > nums[n - 2]) {
             return n - 1;
         }
