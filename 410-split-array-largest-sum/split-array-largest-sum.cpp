@@ -14,8 +14,11 @@ public:
         return splits;
     }
 
-    int splitArray(vector<int>& arr, int n, int k) {
-        if (k > n) return -1;
+  
+
+    int splitArray(vector<int>& arr, int k) {
+        int n=arr.size();
+                if (k > n) return -1;
 
         int maxElem = -1;
         int sum = 0;
@@ -40,9 +43,7 @@ public:
         }
 
         return low;
-    }
-
-    int splitArray(vector<int>& nums, int k) {
-        return splitArray(nums, nums.size(), k);
+    
+       
     }
 };
