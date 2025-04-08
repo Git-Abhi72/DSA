@@ -39,7 +39,7 @@ public:
         
         // Fix: Cast n to an integer for the modulus operation
         if ((int)n % 2 == 0) {  // Cast n to int
-            return (double)(nums3[(int)n / 2] + nums3[(int)n / 2 - 1]) / 2.0;
+            return (nums3[(int)n / 2] + nums3[(int)n / 2 - 1]) / 2.0;
         } else {
             return nums3[(int)n / 2];  // Cast n to int
         }
