@@ -13,7 +13,7 @@ public:
                 hi=mid-1;
             }
         }
-        return k+1+hi;
+        return k+lo;
     }
 };
 
