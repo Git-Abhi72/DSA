@@ -17,8 +17,8 @@ public:
             for(int i=0;i<n;i++){
                 sum+=ceil((double)nums[i]/mid); //to find ceil            
             }
-            if(sum<=threshold) hi=mid-1;
-            else lo=mid+1;
+            if(sum>threshold) lo=mid+1;
+            else hi=mid-1;
           
     }
     return lo;
